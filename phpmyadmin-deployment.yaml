@@ -22,10 +22,10 @@ spec:
             - containerPort: 80
           env:
             - name: PMA_HOST
-              value: db.plural-qa.svc.cluster.local
+              value: db.svc.cluster.local
             - name: PMA_PORT
               value: "3306"
             - name: PMA_USER
-              value: MyWordPressUser
+              value: root
             - name: PMA_PASSWORD
-              value: Pa$$5w0rD
+              value: MyR00tMySQLPa$$5w0rD
