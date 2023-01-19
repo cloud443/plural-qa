@@ -22,7 +22,7 @@ spec:
             - containerPort: 80
           env:
             - name: PMA_HOST
-              value: db.svc.cluster.local
+              value: db.default.svc.cluster.local
             - name: PMA_PORT
               value: "3306"
             - name: PMA_USER
