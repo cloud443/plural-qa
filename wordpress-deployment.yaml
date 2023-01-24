@@ -48,17 +48,15 @@ spec:
         tier: frontend
     spec:
       containers:
-      - image: cyberdunes/wordpress
+      - image: wordpress
         name: wordpress
         env:
         - name: WORDPRESS_DB_HOST
-          value: db.svc.cluster.local:3306
+          value: db.default.svc.cluster.local
         - name: WORDPRESS_DB_USER
           value: root
         - name: WORDPRESS_DB_PASSWORD
           value: MyR00tMySQLPa$$5w0rD
-        - name: WORDPRESS_DB_NAME
-          value: MyWordPressDatabaseName
         ports:
         - containerPort: 80
           name: wordpress
