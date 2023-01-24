@@ -25,7 +25,3 @@ spec:
               value: db.default.svc.cluster.local
             - name: PMA_PORT
               value: "3306"
-            - name: PMA_USER
-              value: root
-            - name: PMA_PASSWORD
-              value: MyR00tMySQLPa$$5w0rD
